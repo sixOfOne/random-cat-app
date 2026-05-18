@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # Random Cat App 🐱
 
 A super simple Flask web app that shows a random cat from [http.cat](https://http.cat) every time you refresh the page.
