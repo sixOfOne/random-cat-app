@@ -1,0 +1,19 @@
+replicaCount: 1
+
+image:
+    repository: random-cat-app
+    tag: "latest"
+    pullPolicy: Never # Use local image with Minikube
+
+service:
+    type: NodePort
+    port: 8080
+    nodePort: 32447
+
+resources:
+    limits:
+        cpu: 200m
+        memory: 256Mi
+    requests:
+        cpu: 100m
+        memory: 128Mi
